@@ -1,6 +1,6 @@
 ## Forum_DSI_Agenda13 🖥
-Nessa agenda, foi possível aprimorar 🛠 da Pagina "Meus sites favoritos" <p>
-que fora criado na agenda 1️⃣2️⃣
+Nessa agenda, foi possível aprimorar 🛠 a página "Meus sites favoritos" <p>
+que fora criado na agenda 1️⃣2️⃣ <p>
 
 Remodelei a página criada na naquela agenda aplicando alguns efeitos <p>
 e técnicas de CSS inline (utilizada dentro do próprio código HTML) <p>
