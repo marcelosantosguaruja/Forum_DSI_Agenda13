@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Sites Favoritos</title>
+</head>
+<body>
+    <!-- Arquivo de redefinição de estilos -->
+    <link rel="stylesheet" href="reset.css">
+    <!-- Estilos da página -->
+    <style>
+        /* Configuração geral */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00000a;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Cabeçalho */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: rgb(247, 247, 249);
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            color: rgb(219, 247, 8);
+            font-size: 18px;
+        }
+
+        /* Organização das colunas */
+        .principal {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Estilos compartilhados */
+        .coluna {
+            flex: 1 1 220px;
+            max-width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Títulos das seções */
+        .coluna h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* Estilo exclusivo de AMAZONTCC */
+        .amazontcc {
+            background-color: #dbeafe;
+            border: 2px solid #2563eb;
+        }
+
+        /* Estilo exclusivo de ETEC */
+        .etec {
+            background-color: #dcfce7;
+            border: 2px solid #16a34a;
+        }
+
+        /* Estilo exclusivo de MYGITHUB */
+        .mygithub {
+            background-color: #f3e8ff;
+            border: 2px solid #9333ea;
+        }
+
+                /* Estilo exclusivo de NETFLIX */
+        .netflix {
+            background-color: #d2e407;
+            border: 2px solid #000000;
+        }
+
+                /* Estilo exclusivo de YOUTUBE */
+        .youtube {
+            background-color: #1571f1;
+            border: 2px solid #000000;
+        }
+
+        /* Configuração das imagens */
+        .coluna img {
+            display: block;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+
+            /* Transição suave */
+            transition: transform 0.5s ease;
+        }
+
+        /* Efeito de ampliação de 5% */
+        .coluna img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho principal -->
+    <header>
+        <h1>Meus Sites Favoritos</h1>
+        <p>
+            Listei os cinco sites que mais gosto.
+        </p>
+    </header>
+    <!-- Conteúdo principal -->
+    <main class="principal">
+        <!-- Primeira seção: AMAZONTCC -->
+        <section class="coluna amazontcc" id="amazontcc">
+            <h2>Meu livro na Amazon</h2>
+            <a href="https://www.amazon.com.br/TCC-projeto-at%C3%A9-nota-10-ebook/dp/B0HN6VZWSD/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2LBTUVTYNQMSF&dib=eyJ2IjoiMSJ9.trJnUCJL51uE5KjBXdzBToWznSqY9qocdnz5-ujRw5_cxqY-26yZDtBOXeLXhoj51nBlrisEHT3Zq28UTR1mR7_OSHu7n_wA8zqZzXGQHAM_SKVpXbsAMopOAVRw1Fu-twHtHeVmuwiUdhBV_P95_6VNavUWzCdGOr5DU__5aK58fpicAit-LjzUpBOEFAEo45IEerJlwUcw1dCUNlun59PlwFJcRGfCumzGKIeHsAi9Xk5khpEanm0_TFfE_pvGJp7GpMg1JMothLUab9tFfEnqvwc0z-XHDlxAJsxXSGE.MjOF1RfuAvAXcBhwPyuZ2TBDCwU4iuwpus8SfGGsP3M&dib_tag=se&keywords=tcc+10&qid=1794108358&sprefix=tcc+10%2Caps%2C362&sr=8-3&tag=69236102-20"
+                target="_blank"
+                rel="noopener noreferrer">
+
+             <img src="amazontcc.png"
+                 alt="Imagem de amazontcc">
+            </a>
+            <p class="descricao"> 
+                Acesso ao livro.
+            </p>
+        </section>
+        <!-- Segunda seção: ETEC -->
+        <section class="coluna etec" id="etec">
+            <h2>Site da ETEC</h2>
+            <a href="https://eadtec.cps.sp.gov.br/index.php?msg=Voc%EA%20precisa%20estar%20logado%20para%20acessar%20o%20ambiente%20virtual"
+                target="_blank"
+                rel="noopener noreferrer">
+            <img src="etec.png"
+                 alt="Imagem do Site da ETEC">
+            </a>
+
+            <p class="descricao">
+                Acesso ao ambiente virtual da ETEC.
+            </p>
+        </section>
+        <!-- Terceira seção: MYGITHUB -->
+        <section class="coluna mygithub" id="mygithub">
+            <h2>Meu GitHub</h2>
+            <a href="https://github.com/marcelosantosguaruja"
+                target="_blank"
+                rel="noopener noreferrer">
+            <img src="mygithub.JPG"
+                 alt="Imagem do Meu GitHub">
+            </a>
+            <p class="descricao">
+               Clique para acessar meu link do GitHub.
+            </p>
+        </section>
+        <!-- Quarta seção: NETFLIX -->
+        <section class="coluna netflix" id="netflix">
+            <h2>Netflix</h2>
+            <a href="https://www.netflix.com/browse"
+                target="_blank"
+                rel="noopener noreferrer">
+            <img src="netflix.jfif"
+                 alt="Imagem da NETFLIX">
+            </a>
+            <p class="descricao">
+               Acesso ao browse da NETFLIX.
+            </p>
+        </section>
+        <!-- Terceira seção: YOUTUBE -->
+        <section class="coluna youtube" id="youtube">
+            <h2>YouTube</h2>
+            <a href="https://www.youtube.com/shorts/AGlgR1-ndLY"
+                target="_blank"
+                rel="noopener noreferrer">
+            <img src="youtube.jfif"
+                 alt="Imagem do YouTube">
+            </a>
+            <p class="descricao">
+               Acesse o Short sobre PSICOPEDAGOGIA, do canal psicodarkpedagogico.
+            </p>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>
+            Fonte das imagens:
+            <a href="https://www.google.com.br"
+               target="_blank"
+               rel="noopener noreferrer">
+                Google Images
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
